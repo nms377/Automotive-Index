@@ -40,4 +40,7 @@ WHERE make_code = 'LAM';
 SELECT * FROM car_models
 WHERE year BETWEEN 2010 AND 2015;
 
+SELECT * FROM car_models
+WHERE year = 2010;
+
 \timing off
