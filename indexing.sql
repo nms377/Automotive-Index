@@ -22,7 +22,7 @@
 -- \i scripts/car_model_data.sql;
 -- \i scripts/car_model_data.sql;
 
-\timing
+\timing on
 
 SELECT DISTINCT make_title
 FROM car_models
@@ -39,3 +39,5 @@ WHERE make_code = 'LAM';
 
 SELECT * FROM car_models
 WHERE year BETWEEN 2010 AND 2015;
+
+\timing off
