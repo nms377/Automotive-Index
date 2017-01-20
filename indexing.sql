@@ -1,23 +1,29 @@
-\c nicolesandry;
+-- \c nicolesandry;
 
-DROP USER "indexed_cars_user";
+-- DROP USER "indexed_cars_user";
 
-CREATE USER "indexed_cars_user";
+-- CREATE USER "indexed_cars_user";
 
-DROP DATABASE IF EXISTS "indexed_cars";
+-- DROP DATABASE IF EXISTS "indexed_cars";
 
-CREATE DATABASE "indexed_cars" OWNER "indexed_cars_user";
+-- CREATE DATABASE "indexed_cars" OWNER "indexed_cars_user";
 
-\c indexed_cars indexed_cars_user;
+-- \c indexed_cars indexed_cars_user;
 
-\i scripts/car_models.sql;
-\i scripts/car_model_data.sql;
-\i scripts/car_model_data.sql;
-\i scripts/car_model_data.sql;
-\i scripts/car_model_data.sql;
-\i scripts/car_model_data.sql;
-\i scripts/car_model_data.sql;
-\i scripts/car_model_data.sql;
-\i scripts/car_model_data.sql;
-\i scripts/car_model_data.sql;
-\i scripts/car_model_data.sql;
+-- \i scripts/car_models.sql;
+-- \i scripts/car_model_data.sql;
+-- \i scripts/car_model_data.sql;
+-- \i scripts/car_model_data.sql;
+-- \i scripts/car_model_data.sql;
+-- \i scripts/car_model_data.sql;
+-- \i scripts/car_model_data.sql;
+-- \i scripts/car_model_data.sql;
+-- \i scripts/car_model_data.sql;
+-- \i scripts/car_model_data.sql;
+-- \i scripts/car_model_data.sql;
+
+\timing
+
+SELECT DISTINCT make_title
+FROM car_models
+WHERE make_code = 'LAM';
