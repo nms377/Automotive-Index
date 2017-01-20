@@ -36,3 +36,6 @@ AND model_code = 'GT-R';
 SELECT make_code, model_code, model_title, year
 FROM car_models
 WHERE make_code = 'LAM';
+
+SELECT * FROM car_models
+WHERE year BETWEEN 2010 AND 2015;
